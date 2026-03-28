@@ -1,4 +1,3 @@
-
 local WHITELIST_IDS = {
     5614441919,
     3935807343,
@@ -207,9 +206,9 @@ if setfflag then
     end)
     pcall(function()
         if getfflag(flag_interpolationMaxDelay) ~= nil then
-            setfflag(flag_interpolationMaxDelay, "0")
+            setfflag(flag_interpolationMaxDelay, "9")
         elseif getfflag(flag_interpolationMaxDelayRaw) ~= nil then
-            setfflag(flag_interpolationMaxDelayRaw, "0")
+            setfflag(flag_interpolationMaxDelayRaw, "60")
         end
     end)
 end
